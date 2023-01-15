@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <script src="https://kit.fontawesome.com/bd781e8303.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Facebook Maqueta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+      <header class="container-fluid ps-0 pe-0 navbar navbar-expand-lg bg-light d-flex justify-content-between"
+        style="height: 56px; background-color: #e2e2e9;">
+      
+        <!-- ----------------------Izquierda----------------------- -->
+        <div class="collapse navbar navbar-expand-md d-flex justify-content-start align-items-center ps-2 col-lg-2 d-md-none d-sm-none d-none d-lg-flex" id="navbarIzquierda">
+      
+          <!-- Logo Facebook -->
+          <a class="navbar-brand" href="#">
+            <img id="facebookLogo" src="./IMG/header/facebook.png" alt="Facebook Logo" class="d-inline-block align-text-top">
+          </a>
+      
+          <!-- Search -->
+          <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      
+        <!-- -------------------------Centro------------------------ -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCentro"
+          aria-controls="navbarCentro" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-flex justify-content-center align-items-center col-lg-8" id="navbarCentro">
+          <ul id="ulCentro" class="navbar-nav">
+      
+            <!-- Inicio -->
+            <li id="inicio" class="nav-item dropdown mx-1 px-4">
+              <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="inicioIco" alt="inicio">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Recientes</a></li>
+                <li><a class="dropdown-item" href="#">Antiguas</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Spam</a></li>
+              </ul>
+            </li>
+      
+            <!-- Watch -->
+            <li id="watch" class="nav-item dropdown mx-1 px-4">
+              <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="watchIco" alt="watch">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Juegos</a></li>
+                <li><a class="dropdown-item" href="#">Música</a></li>
+                <li><a class="dropdown-item" href="#">Deportes</a></li>
+                <li><a class="dropdown-item" href="#">Eventos</a></li>
+              </ul>
+            </li>
+      
+            <!-- Amigos -->
+            <li id="amigos" class="nav-item dropdown mx-1 px-4">
+              <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="amigosIco" alt="amigos">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Amigos Agradables</a></li>
+                <li><a class="dropdown-item" href="#">Amigos Desagradables</a></li>
+              </ul>
+            </li>
+      
+            <!-- Grupos -->
+            <li id="grupos" class="nav-item dropdown mx-1 px-4">
+              <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="gruposIco" alt="grupos">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Grupos Interesantes</a></li>
+                <li><a class="dropdown-item" href="#">Grupos Aburridos</a></li>
+              </ul>
+            </li>
+      
+            <!-- Marketplace -->
+            <li id="marketplace" class="nav-item dropdown mx-1 px-4">
+              <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="marketplaceIco" alt="marketplace">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                <li><a class="dropdown-item" href="#">Automóviles</a></li>
+                <li><a class="dropdown-item" href="#">Ropa/Lencería</a></li>
+                <li><a class="dropdown-item" href="#">Cosas Ilegales</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      
+        <!-- ---------------------Derecha----------------------- -->
+        <div class="collapse navbar navbar-expand-md d-flex justify-content-start align-items-center col-lg-2 d-none d-md-none d-sm-none d-lg-flex" id="navbarDerecha">
+          <ul id="navDerecha" class="navbar-nav">
+            
+            <!-- Perfil Derecha -->
+            <li class="nav-item">
+              <a class="nav-link d-flex flex-row" href="#">
+                <img class="rounded-circle" src="./IMG/header/imgPerfil.jpg" alt="Imagen Perfil" width="40" height="34">
+                <span class="text-center text-capitalize fw-bold ms-2">osmán</span>
+              </a>
+            </li>
+
+            <!-- Menu 9 puntos -->
+            <li id="menu9" class="nav-item rounded-circle d-flex justify-content-start align-items-center ms-2">
+              <a class="nav-link" href="#">
+                <img id="menu9Ico" src="./IMG/header/menu-9-ptos.png" alt="Menú" height="25" width="25">
+              </a>
+            </li>
+
+            <!-- Messenger -->
+            <li id="messenger" class="nav-item rounded-circle d-flex justify-content-start align-items-center ms-2">
+              <a class="nav-link" href="#">
+                <img id="messengerIco" src="./IMG/header/messenger.png" alt="Messenger" height="25" width="25">
+              </a>
+            </li>
+
+            <!-- Notificaciones -->
+            <li id="notificaciones" class="nav-item rounded-circle d-flex justify-content-start align-items-center ms-2">
+              <a class="nav-link" href="#">
+                <img id="notificacionesIco" src="./IMG/header/notification.png" alt="Notification" height="25" width="25">
+              </a>
+            </li>
+
+            <!-- Cuenta -->
+            <li id="cuenta" class="nav-item rounded-circle d-flex justify-content-start align-items-center ms-2">
+              <a class="nav-link" href="#">
+                <img id="cuentaIco" src="./IMG/header/cuenta.png" alt="Cuenta" height="25" width="25">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+    <!-- ----------------------------------------MAIN------------------------------------------------------ -->
+    <main class="container-fluid">
+      <div class="row">
+    
+        <!-- NAVEGADOR IZQUIERDO -->
+        <div id="navIzq"
+          class="container-fluid col-lg-2 d-md-none d-lg-block d-none d-sm-block d-sm-none d-md-block col pt-1">
+    
+          <!-- Perfil -->
+          <div class="row my-2 d-flex justify-content-start align-items-center rounded-4">
+            <!-- Foto Perfil -->
+            <div class="col-lg-2">
+              <img alt="Imagen Perfil" src="./IMG/main/navIzquierda/imgPerfil.jpg" class="rounded-circle" />
+            </div>
+            <!-- Nombre del perfil -->
+            <h3 class="col-lg-8 text-capitalize fs-5 my-0">osmán azuaje</h3>
+          </div>
+    
+          <!-- OBJETIVO 5 - Accordion -->
+          <div class="accordion accordion-flush" id="#accordionFlushNavBarIzquierda">
+
+            <!-- Amigos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingAmigos">
+                <button class="accordion-button collapsed text-capitalize fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAmigos" aria-expanded="false" aria-controls="flush-collapseAmigos">
+                  <img class="me-2" alt="Amigos" src="./IMG/main/navIzquierda/friends.png"/>
+                  <div class="col">
+                    amigos
+                    <ul class="text-capitalize fs-6 my-0 text-primary">
+                      <li>1 solicitud</li>
+                    </ul>
+                </button>
+              </h2>
+              <div id="flush-collapseAmigos" class="accordion-collapse collapse" aria-labelledby="flush-headingAmigos" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">Los <strong>amigos en Facebook</strong> te permiten conectarte con las personas que te interesan. Si agregas a alguien como amigo, significa que ambos van a poder ver la actividad en el feed, las historias y las fotos del otro.</div>
+              </div>
+            </div>
+
+            <!-- Grupos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingGrupos">
+                <button class="accordion-button collapsed text-capitalize fs-5 my-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGrupos" aria-expanded="false" aria-controls="flush-collapseGrupos">
+                  <img class="me-2" alt="Grupos" src="./IMG/main/navIzquierda/groups.png"/>
+                  grupos
+                </button>
+              </h2>
+              <div id="flush-collapseGrupos" class="accordion-collapse collapse" aria-labelledby="flush-headingGrupos" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">Los <strong>grupos</strong> son un espacio pensado para intercambiar opiniones acerca de intereses comunes con determinadas personas. Puedes crear un grupo con cualquier fin (una reunión familiar, el equipo con el que haces deporte después del trabajo o un club de lectura).</div>
+              </div>
+            </div>
+            
+            <!-- Marketplace -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingMarketplace">
+                <button class="accordion-button collapsed text-capitalize fs-5 my-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMarketplace" aria-expanded="false" aria-controls="flush-collapseMarketplace">
+                  <img class="me-2" alt="Marketplace" src="./IMG/main/navIzquierda/marketplace.png"/>
+                  marketplace
+                </button>
+              </h2>
+              <div id="flush-collapseMarketplace" class="accordion-collapse collapse" aria-labelledby="flush-headingMarketplace" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">El <strong>Marketplace</strong> es un sitio donde los productos son ofrecidos por los comerciantes para ser adquiridos por consumidores, es decir, un mercado en el mundo online. En él, varios comerciantes colocan sus productos a la venta en un sólo canal.</div>
+              </div>
+            </div>
+
+            <!-- Watch -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingWatch">
+                <button class="accordion-button collapsed text-capitalize fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseWatch" aria-expanded="false" aria-controls="flush-collapseWatch">
+                  <img class="me-2" alt="Watch" src="./IMG/main/navIzquierda/watch.png" />
+                  <div class="col">
+                    watch
+                    <ul class="text-capitalize fs-6 my-0 text-primary">
+                      <li>+9 videos</li>
+                    </ul>
+                </button>
+              </h2>
+              <div id="flush-collapseWatch" class="accordion-collapse collapse" aria-labelledby="flush-headingWatch" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body"><strong>Facebook Watch</strong> es una plataforma interna de <strong>Facebook</strong> en la que se centralizan todos los vídeos que se suben a la red social. Sirve para centralizar la experiencia, y que en vez de tener que estar buscando los vídeos en tu muro puedas ir a una sección en la que estén todos juntos para que sea más fácil consumirlos.
+                </div>
+              </div>
+            </div>
+
+            <!-- Recuerdos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingRecuerdos">
+                <button class="accordion-button collapsed text-capitalize fs-5 my-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseRecuerdos" aria-expanded="false" aria-controls="flush-collapseRecuerdos">
+                  <img class="me-2" alt="Recuerdos" src="./IMG/main/navIzquierda/recuerdos.png" />
+                  recuerdos
+                </button>
+              </h2>
+              <div id="flush-collapseRecuerdos" class="accordion-collapse collapse" aria-labelledby="flush-headingRecuerdos" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body"><strong>"Recuerdos"</strong> es una evolución de la función "Un día cómo hoy", en <strong>Facebook</strong>. Incluyen publicaciones que realizaste hace uno o más años y más. <strong>Facebook</strong> rediseñó la herramienta Un día como hoy y la transformó en Recuerdos.
+                </div>
+              </div>
+            </div>
+
+            <!-- Guardado -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingGuardado">
+                <button class="accordion-button collapsed text-capitalize fs-5 my-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGuardado" aria-expanded="false" aria-controls="flush-collapseGuardado">
+                  <img class="me-2" alt="Guardado" src="./IMG/main/navIzquierda/guardado.png" />
+                  guardado
+                </button>
+              </h2>
+              <div id="flush-collapseGuardado" class="accordion-collapse collapse" aria-labelledby="flush-headingGuardado" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">Si guardas algo en Facebook, <strong>solo tú puedes verlo, a menos que optes por agregarlo a una colección con la configuración de privacidad Público, Amigos o Solo colaboradores</strong>. Todas las personas del público de la colección pueden ver los artículos, los comentarlos en los artículos y el nombre de la colección.
+                </div>
+              </div>
+            </div>
+
+            <!-- Páginas -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingPaginas">
+                <button class="accordion-button collapsed text-capitalize fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePaginas" aria-expanded="false" aria-controls="flush-collapsePaginas">
+                  <img class="me-2" alt="Páginas" src="./IMG/main/navIzquierda/paginas.png" />
+                  <div class="col">
+                    páginas
+                    <ul class="text-capitalize fs-6 my-0 text-primary">
+                      <li>+9 actualizaciones</li>
+                    </ul>
+                </button>
+              </h2>
+              <div id="flush-collapsePaginas" class="accordion-collapse collapse" aria-labelledby="flush-headingPaginas" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">Una <strong>página</strong> de fans de <strong>Facebook</strong> es un cuenta comercial que representa a una empresa o una organización. Es similar a un perfil de <strong>Facebook</strong>, pero ofrece herramientas únicas para realizar la gestión y monitoreo de la interacción y participación.
+                </div>
+              </div>
+            </div>
+          
+            <!-- Eventos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEventos">
+                <button class="accordion-button collapsed text-capitalize fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEventos" aria-expanded="false" aria-controls="flush-collapseEventos">
+                  <img class="me-2" alt="Eventos" src="./IMG/main/navIzquierda/eventos.png" />
+                  <div class="col">
+                    eventos
+                    <ul class="text-capitalize fs-6 my-0 text-primary">
+                      <li>1 notificación</li>
+                    </ul>
+                </button>
+              </h2>
+              <div id="flush-collapseEventos" class="accordion-collapse collapse" aria-labelledby="flush-headingEventos" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">Un <strong>evento</strong> en <strong>Facebook</strong> es una opción muy útil que ofrece la red social para comunicar a nuestros contactos que una feria, celebración, curso o cualquier otro evento. ¿Qué tengo que hacer para invitar a alguien a mi evento? Si eres organizador de un evento, puedes invitar a tus amigos.
+                </div>
+              </div>
+            </div>
+
+            <!-- Empleos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEmpleos">
+                <button class="accordion-button collapsed text-capitalize fs-5 my-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEmpleos" aria-expanded="false" aria-controls="flush-collapseEmpleos">
+                  <img class="me-2" alt="Empleos" src="./IMG/main/navIzquierda/empleos.png" />
+                  empleos
+                </button>
+              </h2>
+              <div id="flush-collapseEmpleos" class="accordion-collapse collapse" aria-labelledby="flush-headingEmpleos" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">La herramienta puede ser usada para buscar y <strong>aplicar a empleos</strong> directamente en la app móvil y en la web. Este movimiento es una forma de formalizar una tendencia que seguramente los analistas de Facebook ya habían notado en el sitio: la gente busca empleo a través de esta red.
+                </div>
+              </div>
+            </div>
+
+            <!-- Ver más -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingVermas">
+                <button class="accordion-button collapsed text-capitalize fs-5 my-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseVermas" aria-expanded="false" aria-controls="flush-collapseVermas">
+                  <img class="me-2" alt="Ver más" src="./IMG/main/navIzquierda/ver mas.png" />
+                  ver más
+                </button>
+              </h2>
+              <div id="flush-collapseVermas" class="accordion-collapse collapse" aria-labelledby="flush-headingVermas" data-bs-parent="#accordionFlushNavBarIzquierda">
+                <div class="accordion-body">Ver contenido adicional en <strong>Facebook.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- ZONA CENTRAL -->
+        <div id="zonaCentral" class="col-lg-8 col-md-8 col-12 column d-flex flex-column align-items-center">
+          
+          <div id="carouselExampleControls" class="card rounded my-3 pt-1 col-lg-8 carousel slide column" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                
+                <div class="row row-cols-1 row-cols-md-4 row-cols-5 g-3 d-flex justify-content-center align-items-center my-3">
+                  
+                  <!-- Story 1 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story1Modal">
+                    <div id="story1" class="card h-100 w-120 d-flex justify-content-end align-items-center">
+                      <img class="rounded-circle border border-5 border-white" src="./IMG/main/zonaCentral/crear-story.png" width="50px" height="50px" alt="Crear Story">
+                      <p class="text-center fw-bold">Crear una historia</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 2 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story2Modal">
+                    <div id="story2" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story2.jpg" width="50px" height="50px" alt="Foto Perfil Story 2">
+                      <p class="text-center fw-bold">Sylvester Stallone</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 3 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story3Modal">
+                    <div id="story3" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story3.jpg" width="50px" height="50px" alt="Foto Perfil Story 3">
+                      <p class="text-center fw-bold">Arnold Schwarzenegger</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 4 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story4Modal">
+                    <div id="story4" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story4.jpg" width="50px" height="50px" alt="Foto Perfil Story 4">
+                      <p class="text-center fw-bold">Jean-Claude Van Damme</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 5 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story5Modal">
+                    <div id="story5" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story5.jpg" width="50px" height="50px" alt="Foto Perfil Story 5">
+                      <p class="text-center fw-bold">Dolph Lundgren</p>
+                    </div>
+                  </div>
+                
+                </div>
+                
+              </div>
+
+              <!-- Slider 2 -->
+              <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-4 row-cols-5 g-3 d-flex justify-content-center align-items-center my-3">
+                  
+                  <!-- Story 6 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story6Modal">
+                    <div id="story6" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story6.jpg" width="50px" height="50px" alt="Foto Perfil Story 6">
+                      <p class="text-center fw-bold">Robert Downey Jr.</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 7 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story7Modal">
+                    <div id="story7" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story7.jpg" width="50px" height="50px" alt="Foto Perfil Story 7">
+                      <p class="text-center fw-bold">Chris Evans</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 8 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story8Modal">
+                    <div id="story8" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story8.jpg" width="50px" height="50px" alt="Foto Perfil Story 8">
+                      <p class="text-center fw-bold">Chris Hemsworth</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 9 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story9Modal">
+                    <div id="story9" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story9.jpg" width="50px" height="50px" alt="Foto Perfil Story 9">
+                      <p class="text-center fw-bold">Chadwick Boseman</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 10 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story10Modal">
+                    <div id="story10" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story10.jpg" width="50px" height="50px" alt="Foto Perfil Story 10">
+                      <p class="text-center fw-bold">Scarlett Johansson</p>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+
+              <!-- Slider 3 -->
+              <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-4 row-cols-5 g-3 d-flex justify-content-center align-items-center my-3">
+                  
+                  <!-- Story 11 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story11Modal">
+                    <div id="story11" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story11.jpg" width="50px" height="50px" alt="Foto Perfil Story 11">
+                      <p class="text-center fw-bold">Gal Gadot</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 12 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story12Modal">
+                    <div id="story12" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story12.jpg" width="50px" height="50px" alt="Foto Perfil Story 12">
+                      <p class="text-center fw-bold">Henry Cavill</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 13 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story13Modal">
+                    <div id="story13" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story13.jpg" width="50px" height="50px" alt="Foto Perfil Story 13">
+                      <p class="text-center fw-bold">Ben Affleck</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 14 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story14Modal">
+                    <div id="story14" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story14.jpg" width="50px" height="50px" alt="Foto Perfil Story 14">
+                      <p class="text-center fw-bold">Jason Momoa</p>
+                    </div>
+                  </div>
+
+                  <!-- Story 15 -->
+                  <div class="col col-lg-2" style="height: 240px;" data-bs-toggle="modal" data-bs-target="#story15Modal">
+                    <div id="story15" class="card h-100 w-120 d-flex justify-content-evenly">
+                      <img class="rounded-circle border border-5 border-primary ms-2 mt-3" src="./IMG/main/zonaCentral/perfil.story15.jpg" width="50px" height="50px" alt="Foto Perfil Story 15">
+                      <p class="text-center fw-bold">Ezra Miller</p>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Botones -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Modals -->
+
+          <!-- Modal Story 1 -->
+          <div class="modal fade" id="story1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Crear una historia</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Las historias de <strong>Facebook</strong> te permiten compartir fotos y videos con tus amigos y seguidores que solo estarán disponibles para el público que elijas durante 24 horas.
+                  Después de este plazo, puedes conservar las historias en el archivo de historias. Solo tú tienes acceso a este archivo.
+                  Puedes compartir contenido en una historia desde Facebook o Messenger. También puedes compartir historias de grupos, eventos o páginas. Obtén más información sobre cómo funcionan las historias.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 2 -->
+          <div class="modal fade" id="story2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sylvester Stallone</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-2-min.jpg" width="100%" alt="Rambo">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 3 -->
+          <div class="modal fade" id="story3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Arnold Schwarzenegger</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-3-min.jpg" width="100%" alt="Terminator">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 4 -->
+          <div class="modal fade" id="story4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Jean-Claude Van Damme</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-4-min.jpg" width="100%" alt="JCVD">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 5 -->
+          <div class="modal fade" id="story5Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Dolph Lundgren</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-5-min.jpg" width="100%" alt="Los Mercenarios">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 6 -->
+          <div class="modal fade" id="story6Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Robert Downey Jr.</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-6-min.jpg" width="100%" alt="Ironman">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 7 -->
+          <div class="modal fade" id="story7Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Chris Evans</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-7-min.jpg" width="100%" alt="Captain America">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 8 -->
+          <div class="modal fade" id="story8Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Chris Hemsworth</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-8-min.jpg" width="100%" alt="Thor">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 9 -->
+          <div class="modal fade" id="story9Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Chadwick Boseman</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-9-min.jpg" width="100%" alt="Black Panther">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 10 -->
+          <div class="modal fade" id="story10Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Scarlett Johansson</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-10-min.jpg" width="100%" alt="Black Widow">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 11 -->
+          <div class="modal fade" id="story11Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Gal Gadot</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-11-min.jpg" width="100%" alt="Wonder Woman">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 12 -->
+          <div class="modal fade" id="story12Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Henry Cavill</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-12-min.jpg" width="100%" alt="Superman">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 13 -->
+          <div class="modal fade" id="story13Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Ben Affleck</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-13-min.jpg" width="100%" alt="Batman">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 14 -->
+          <div class="modal fade" id="story14Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Jason Momoa</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-14-min.jpg" width="100%" alt="Aquaman">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Story 15 -->
+          <div class="modal fade" id="story15Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Ezra Miller</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <img src="./IMG/main/zonaCentral/modal-15.jpg" width="100%" alt="The Flash">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carta -->
+          <div class="card rounded my-3 pt-1 col-lg-8">
+            <div class="card-header">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <h5 class="card-title"><img class="me-2 rounded-circle" src="./IMG/main/navIzquierda/imgPerfil.jpg" alt="Foto Perfil" width="45px">Osmán Azuaje</h5>
+                <img class="me-3" src="./IMG/main/zonaDerecha/menu-seleccion-pagina.png" alt="Menu" height="15px" width="15px">
+              </div>
+              <p class="card-text">Formula 1 al Día</p>
+              <p class="card-text">Ferrari se vuelve a equivocar...</p>
+            </div>
+            <div class="card-body">
+              <img src="./IMG/main/zonaCentral/charles-leclerc-ferrari.jpg" class="card-img-bottom" alt="ferrari">
+            </div>
+            <div class="card-footer">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><img class="me-2" src="./IMG/main/zonaCentral/le-gusta-a-card.png" alt="Le gusta a" width="40px">Tim Cook</li>
+                <li class="list-group-item">
+                  <ul class="list-group list-group-flush list-group-horizontal d-flex justify-content-around">
+                    <li class="list-group-item border border-0"><img class="me-2" width="30px" src="./IMG/main/zonaCentral/me-gusta-card.png" alt="Me gusta">Me gusta</li>
+                    <li class="list-group-item border border-0"><img class="me-2" width="30px" src="./IMG/main/zonaCentral/comentar-card.png" alt="Me gusta">Comentar</li>
+                    <li class="list-group-item border border-0"><img class="me-2" width="30px" src="./IMG/main/zonaCentral/compartir-card.png" alt="Me gusta">Compartir</li>
+                  </ul>
+                </li>
+                <li class="list-group-item d-flex flex-row"><img src="" alt="">
+                  <img class="me-2 rounded-circle" src="./IMG/main/navIzquierda/imgPerfil.jpg" alt="Foto Perfil" width="45px">
+                  <input class="w-75" type="text" placeholder="Escribe un cometario...">
+                  <div class="ms-1 d-flex align-items-center">
+                    <img class="mx-1" width="25px" src="./IMG/main/zonaCentral/carita-feliz-comentario-card.png" alt="Me gusta">
+                    <img class="mx-1" width="22px" src="./IMG/main/zonaCentral/camera-comentario-card.png" alt="Camara">
+                    <img class="mx-1" width="20px" src="./IMG/main/zonaCentral/gif-comenta-card.png" alt="GIF">
+                    <img class="mx-1" width="18px" src="./IMG/main/zonaCentral/sticker-comenta-card.png" alt="Stiker">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Formulario -->
+          <form id="formularioMain"
+            class="row d-flex justify-content-center align-items-center rounded my-3 py-3 col-lg-8">
+    
+            <div class="form-group py-2 mx-4">
+              <label for="InputName">Nombre:</label>
+              <input type="text" class="form-control" id="inputNombre" aria-describedby="nombreMain" placeholder="Escriba su nombre.">
+            </div>
+    
+            <div class="form-group py-2 mx-4">
+              <label for="InputPassword1">Password:</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Introduzca su contraseña.">
+            </div>
+    
+            <div class="form-group py-2 mx-4">
+              <label for="InputEmail">Email:</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailMain" placeholder="Introduzca cu correo electrónico.">
+              <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más (mentira...)</small>
+            </div>
+    
+            <div class="form-group form-check py-2 ms-4">
+              <input type="checkbox" class="form-check-input" id="check1">
+              <label class="form-check-label" for="Check1">Acepto los terminos y condiciones.</label>
+            </div>
+    
+            <button type="submit" class="column col-sm-4 col-md-3 col-lg-3 btn btn-primary mx-1 py-2"
+              id="btnAceptar">Aceptar</button>
+            <button type="submit" class="column col-sm-4 col-md-3 col-lg-3 btn btn-secondary mx-1 py-2"
+              id="btnCancelar">Cancelar</button>
+          </form>
+        </div>
+    
+        <!-- ZONA DERECHA -->
+        <div id="zonaDerecha" class="col-lg-2 col-md-4 d-none d-sm-block d-sm-none d-md-block">
+    
+          <!-- Sección de solicitud de amistad -->
+          <div class="row my-3 d-flex align-items-center rounded"
+            id="solicitudesAmistad">
+            <!-- Icono de Amistad -->
+            <img class="column col-sm-2 col-md-2 col-lg-2 my-1" id="iconoSolicitudAmistad"
+              src="./IMG/main/zonaDerecha/friends.png" alt="Icono Solicitud de Amistad">
+            <h5 class="column col-sm-8 col-md-8 col-lg-8 fs-6 my-1 fw-bold">Solicitudes de amistad</h5>
+            <img id="seleccionPagina" class=" column col-sm-2 col-md-2 col-lg-2 fs-6 my-1 rounded-circle"
+              src="./IMG/main/zonaDerecha/menu-seleccion-pagina.png" alt="Seleccion Página">
+    
+            <!-- Foto Perfil Solicitud de Amistad -->
+            <img class="column col-lg-3 col-md-3 col-sm-3 col-3 rounded-circle" id="fotoPerfilSolicitudAmistad"
+              src="./IMG/main/zonaDerecha/donald-trump.jpg" alt="Foto Perfil - Solicitud de Amistad">
+    
+            <!-- Contenedor interno -->
+            <div class="column col-sm-9 col-md-9 col-lg-9 row my-1 pb-3 d-flex align-items-center" id="contenedorInterno">
+              <h5 class="column col-sm-7 col-md-7 col-lg-7 fs-6 fw-bold">Donald Thrump</h5>
+              <h6 class="column col-sm-5 col-md-5 col-lg-5 fs-7 text-primary">1 sem •</h6>
+    
+              <!-- Fotos miniatura de otras Solicitudes de amistad -->
+              <img class="column col-sm-3 col-md-3 col-lg-3 my-1" id="imgSolicitudesAmistadMiniatura"
+                src="./IMG/main/zonaDerecha/perfiles.mini.png" alt="Solicitudes Amistad Miniaturas">
+              <h6 class="column col-sm-9 col-md-9 col-lg-9 fs-7 my-1 fw-light">10 amigos en común</h6>
+    
+              <!-- Botones -->
+              <button type="button" class="column col-sm-5 col-md-5 col-lg-5 btn btn-primary mx-1"
+                id="btnConfirmar">Confirmar</button>
+              <button type="button" class="column col-sm-5 col-md-5 col-lg-5 btn btn-secondary mx-1"
+                id="btnEliminar">Eliminar</button>
+            </div>
+          </div>
+
+          <div class="row my-3 d-flex align-items-center rounded d-flex justify-content-center align-items-center">
+            <button type="button" class="column col-sm-8 col-md-8 col-lg-8 btn btn-primary mx-1" data-bs-toggle="collapse" data-bs-target="#collapsePublicidad" aria-expanded="false" aria-controls="collapsePublicidad" id="btnColapsar">
+                Colapsar Publicidad
+              </button>
+          </div>
+    
+          <div class="collapse" id="collapsePublicidad">
+            <div class="card card-body">
+          
+              <!-- Area de Publicidad -->
+              <div class="row my-3 d-flex align-items-center" id="areapublicidad">
+          
+                <!-- Publicidad 1 -->
+                <h5 class="column col-sm-12 col-md-12 col-lg-12 fs-6 my-1">Publicidad</h5>
+                <!-- Imagen de Publicidad 1 -->
+                <img class="column col-sm-4 col-md-4 my-1 rounded-3" id="imgPublicidad1"
+                  src="./IMG/main/zonaDerecha/Publicidad1.jpg" alt="Desaparicion Publicidad">
+          
+                <!-- Contenedor interno -->
+                <div class="column col-sm-8 col-md-8 col-lg-8 my-1 d-flex flex-column align-items-center" id="datosPublicidad1">
+          
+                  <!-- Texto -->
+                  <h5 class="column col-sm-12 col-md-12 col-lg-12 fs-6 text-center fw-bold">¿Pretendes Divorciarte, pero no
+                    quieres que Ella se quede con tu
+                    dinero?</h5>
+                  <!-- URL en texto -->
+                  <h6 class="column col-sm-12 col-md-12 col-lg-12text-center fw-light">www.desaparecida.com</h6>
+                </div>
+          
+                <!-- Publicidad 2 -->
+                <!-- Imagen de Publicidad 2 -->
+                <img class="column col-sm-4 col-md-4 col-lg-4 my-1 rounded-3" id="imgPublicidad2"
+                  src="./IMG/main/zonaDerecha/Publicidad2.jpg" alt="Tu sustancia feliz Publicidad">
+          
+                <!-- Contenedor interno -->
+                <div class="column col-sm-8 col-md-8 col-lg-8 my-1 d-flex flex-column align-items-center" id="datosPublicidad2">
+          
+                  <!-- Texto -->
+                  <h5 class="column col-sm-12 col-md-12 col-lg-12 fs-6 text-center fw-bold">¡Oportunidad de
+                    Emprendimiento!¡Vende nuestros productos con altos márgenes de ganancia, y haciendo a tus clientes felices!
+                  </h5>
+                  <!-- URL en texto -->
+                  <h6 class="column col-sm-12 col-md-12 col-lg-12 text-center fw-light">www.tusustanciafeliz.com</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="d-flex flex-row justify-content-around align-items-center">
+        <p class="text-center text-capitalize fw-bold text-white">osmán azuaje</p>
+        <img src="./IMG/footer/OSSE-recortado.gif" alt="Logo Osmán">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

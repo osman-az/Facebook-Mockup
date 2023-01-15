@@ -1,0 +1,310 @@
+/* IMPORTACIONES */
+
+/* GENERALES */
+
+/* ------------------------HEADER---------------------------- */
+#facebookLogo{
+    width: 68%;
+}
+
+/* NavBar Central */
+#ulCentro > li{
+    border-bottom: solid #e2e2e9 4px;
+    transition: 0.5s 0s ease-in-out;
+}
+
+#ulCentro > li:hover{
+    border-bottom: solid #1877f2 4px;
+    background-color: lightgray;
+}
+
+#ulCentro > li > a > img{
+    width: 34%
+}
+
+/* Inicio */
+#inicioIco{
+    content: url(../IMG/header/inicio-gris.png);
+    transition: 0.5s 0s ease-in-out;
+}
+#inicioIco:hover{
+    content: url(../IMG/header/inicio-azul.png);
+}
+
+/* Watch */
+#watchIco{
+    content: url(../IMG/header/watch-gris.png);
+    transition: 0.5s 0s ease-in-out;
+}
+#watchIco:hover{
+    content: url(../IMG/header/watch-azul.png);
+}
+
+/* Amigos */
+#amigosIco{
+    content: url(../IMG/header/amigos-gris.png);
+    transition: 0.5s 0s ease-in-out;
+}
+#amigosIco:hover{
+    content: url(../IMG/header/amigos-azul.png);
+}
+
+/* Grupos */
+#gruposIco{
+    content: url(../IMG/header/grupos-gris.png);
+    transition: 0.5s 0s ease-in-out;
+}
+#gruposIco:hover{
+    content: url(../IMG/header/grupos-azul.png);
+}
+
+/* Marketplace */
+#marketplaceIco{
+    content: url(../IMG/header/marketplace-gris.png);
+    transition: 0.5s 0s ease-in-out;
+}
+#marketplaceIco:hover{
+    content: url(../IMG/header/marketplace-azul.png);
+}
+
+/* NavBar Derecha */
+#menu9{
+    background-color:#d3d3d3;
+    height: 35%;
+    transition: 0.5s 0s ease-in-out;
+}
+#menu9:hover{
+    background-color:#a7a7a7;
+}
+
+#messenger{
+    background-color:#d3d3d3;
+    height: 35%;
+    transition: 0.5s 0s ease-in-out;
+}
+#messenger:hover{
+    background-color:#a7a7a7;
+}
+
+#notificaciones{
+    background-color:#d3d3d3;
+    height: 35%;
+    transition: 0.5s 0s ease-in-out;
+}
+#notificaciones:hover{
+    background-color:#a7a7a7;
+}
+
+#cuenta{
+    background-color:#d3d3d3;
+    height: 35%;
+    transition: 0.5s 0s ease-in-out;
+}
+
+#cuenta:hover{
+    background-color:#a7a7a7;
+}
+
+/* --------------------------MAIN---------------------------- */
+main {
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75) inset;
+    /* height: 1580px; */
+}
+
+main>div {
+    height: 100%;
+}
+
+/* NAVEGADOR IZQUIERDO */
+#navIzq {
+    height: 100%;
+}
+
+.accordion-item > h2 > button > img{
+    width: 12%;
+}
+
+.accordion-item > h2 > button > div > ul > li{
+    font-size: 0.8rem;
+}
+
+#navIzq>div>div>img {
+    width: 100%;
+}
+
+/* ZONA CENTRAL */
+#zonaCentral {
+    height: 100%;
+}
+
+/* Contenedor de Storys */
+#contenedorStorys {
+    box-shadow: 0px 0px 5px 1px rgba(56,56,56,0.55);
+}
+
+#contenedorStorys > div {
+    width: 18%;
+}
+
+#story1Contenedor {
+    height: 43%;
+}
+
+#zonaCentral>div>div {
+    opacity: 1;
+    box-shadow: 0px 0px 5px 1px rgba(71, 71, 71, 0.76);
+    height: 95%;
+    transition: 0.5s 0s ease-in-out;
+    cursor: pointer;
+}
+
+#zonaCentral>div>div:hover {
+    transform: scale(1.02);
+    opacity: 0.5;
+}
+
+#story1 {
+    background: url(../IMG/main/zonaCentral/ny-2010.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story2 {
+    background: url(../IMG/main/zonaCentral/story2.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story3 {
+    background: url(../IMG/main/zonaCentral/story3.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story4 {
+    background: url(../IMG/main/zonaCentral/story4.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story5 {
+    background: url(../IMG/main/zonaCentral/story5.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story6 {
+    background: url(../IMG/main/zonaCentral/story6.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story7 {
+    background: url(../IMG/main/zonaCentral/story7.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story8 {
+    background: url(../IMG/main/zonaCentral/story8.jpeg) center center/cover no-repeat;
+    color: white;
+}
+
+#story9 {
+    background: url(../IMG/main/zonaCentral/story9.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story10 {
+    background: url(../IMG/main/zonaCentral/story10.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story11 {
+    background: url(../IMG/main/zonaCentral/story11.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story12 {
+    background: url(../IMG/main/zonaCentral/story12.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story13 {
+    background: url(../IMG/main/zonaCentral/story13.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story14 {
+    background: url(../IMG/main/zonaCentral/story14.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+#story15 {
+    background: url(../IMG/main/zonaCentral/story15.jpg) center center/cover no-repeat;
+    color: white;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+/* Formulario */
+#formularioMain {
+    box-shadow: 0px 0px 5px 1px rgba(56,56,56,0.55);
+}
+
+/* ZONA DERECHA */
+#zonaDerecha {
+    height: 100%;
+}
+
+/* Area de Solicitud de amistad */
+#solicitudesAmistad {
+    box-shadow: 0px 0px 5px 1px rgba(56,56,56,0.55);
+    height: 13%;
+}
+
+#solicitudesAmistad>div>button {
+    height: 35%;
+}
+
+#fotoPerfilSolicitudAmistad {
+    width: 29%;
+    height: 32%;
+    position: relative;
+    bottom: 10%;
+}
+
+#seleccionPagina {
+    width: 15%;
+    height: 10%;
+    transition: 0.5s 0s ease-in-out;
+}
+
+#seleccionPagina:hover {
+    background-color: rgb(167, 167, 167);
+}
+
+#iconoSolicitudAmistad {
+    width: 14%;
+}
+
+#imgSolicitudesAmistadMiniatura {
+    width: 20%;
+}
+
+/* Area de Publicidad */
+#collapsePublicidad {
+    box-shadow: 0px 0px 5px 1px rgba(56,56,56,0.55);
+    height: 18%;
+}
+
+#areapublicidad > h6{
+    font-size: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    height: 7vh;
+    background-color: #000c13;
+}
+
+footer>img {
+    height: 60%;
+    width: 3%;
+}
