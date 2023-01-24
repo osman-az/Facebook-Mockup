@@ -37,3 +37,8 @@ Creation of a **Facebook mockup**, with other additional elements, to apply and 
 15. Ready the *button* on the right, activate a *Collapse* content. The *Collapse*content should be below the box that contains the *button.*
 
 16. Prepared the elements in the left column to be *Accordion containers*, which when clicked on them display content.
+
+### Technologies:
+                    
+| ![HTML 5](https://i.imgur.com/QmbHEsR.png "HTML 5") HTML 5 | ![CSS 3](https://i.imgur.com/O6lJ8iB.png "CSS 3") CSS 3 | ![Bootstrap](https://i.imgur.com/7XKsCWc.png "Bootstrap") Bootstrap
+| ------------- | ------------- | ------------- |
